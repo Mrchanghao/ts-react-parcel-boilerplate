@@ -1,0 +1,34 @@
+{
+  "name": "parcel-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
+    "start": "parcel ./src/index.html",
+    "type-check:watch": "tsc --noEmit --watch"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "assets": "^3.0.1",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.1.8",
+    "mobx-react-lite": "^1.5.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@types/node": "^11.13.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "concurrently": "^5.1.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.0",
+    "typescript": "^3.8.2"
+  }
+}
